@@ -17,6 +17,7 @@ The following parameters can be modified:
 - visibility = float: This denotes the local visibilities of Alice's and Bob's devices.
 - binning = Boolean: True = Bin no click outcomes, False = Keep no-click outcomes
 
+It is also possible to have different efficiency for etaA and etaBS. You can set the value of etaBS manually in line 345.
 """
 def get_momentequalities(A,B,D,etaA,etaBS,etaBL,chsh_or_zx):
     ### Get the moment equalities ###
