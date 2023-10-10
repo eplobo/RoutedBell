@@ -1,7 +1,6 @@
-# -*- coding: utf-8 -*-
 """
-Created on Mon Sep  4 15:10:46 2023
-@author: Edwin
+Authors:
+Edwin Peter Lobo (edwin.lobo@ulb.be) and Jef Pauwels (jef.pauwels@ulb.be)
 """
 """
 This code runs the NPA implementations for scenarios considered in the manuscript.
