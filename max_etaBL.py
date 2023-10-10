@@ -9,6 +9,14 @@ NOTE: This code requires the latest version of the package ncpol2sdpa that is be
 maintained by Peter Brown and is available on github.
 
 Details about the implementation can be found in the Appendix of the manuscript.
+
+The following parameters can be modified:
+
+- etaA_list = list of short range efficiencies
+- chsh_or_zx = 'chsh' :CHSH implementation, chsh_or_zx = 'zx' :BB84 implementation
+- visibility = float: This denotes the local visibilities of Alice's and Bob's devices.
+- binning = Boolean: True = Bin no click outcomes, False = Keep no-click outcomes
+
 """
 def get_momentequalities(A,B,D,etaA,etaBS,etaBL,chsh_or_zx):
     ### Get the moment equalities ###
