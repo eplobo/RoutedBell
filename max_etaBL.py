@@ -133,15 +133,15 @@ nY = 2
 nZ = 2
 d=2
 chsh_or_zx = 'chsh' ##This fixes the ideal implementation to be used. For CHSH implementation, set this variable equal to the string 'chsh'. For the BB84 implementation, set this variable equal to the string 'zx'.
-binning = False ## Choose whether the outcomes are deterministically binned to +1 or if they are kept as seperate outcomes
-visibility = 0.94
+binning = False ## Choose whether the no-click outcomes are deterministically binned to +1 or if they are kept as seperate outcomes. binning=False means the no-click is kept as a separate outcome.
+visibility = 1 ## This denotes the local visibiities of Alice's and Bob's devices.
 
 if chsh_or_zx == 'chsh':
     if binning:
         etaA_list = np.linspace(0.96,1,20)
     else:
         etaA_list = np.linspace(0.9,0.92,3).tolist() + np.linspace(0.92,0.94,4)[1:].tolist() + np.linspace(0.94,0.96,5)[1:].tolist()  + np.linspace(0.96,0.98,7)[1:].tolist() + \
-            # np.linspace(0.98,0.99,7)[1:].tolist() + np.linspace(0.99,1,8)[1:].tolist()
+            np.linspace(0.98,0.99,7)[1:].tolist() + np.linspace(0.99,1,8)[1:].tolist()
 
 if chsh_or_zx == 'zx':
     if binning:
